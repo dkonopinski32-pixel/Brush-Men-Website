@@ -148,6 +148,13 @@ nav.main-nav a.active {
   gap: 20px;
 }
 
+.hero-logo {
+  height: 160px;
+  width: auto;
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+
 .hero-eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.12em;
@@ -701,6 +708,10 @@ footer .fine-print {
 
   .hero {
     padding: 60px 0;
+  }
+
+  .hero-logo {
+    height: 110px;
   }
 
   .hero h1 {
