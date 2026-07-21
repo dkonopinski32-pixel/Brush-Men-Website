@@ -138,21 +138,28 @@ nav.main-nav a.active {
 .hero {
   background: linear-gradient(135deg, var(--navy) 0%, var(--navy-dark) 100%);
   color: var(--white);
-  padding: 90px 0;
+  padding: 48px 0;
 }
 
-.hero .container {
+.hero-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-copy {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 20px;
+  gap: 14px;
 }
 
 .hero-logo {
-  height: 160px;
+  height: 300px;
   width: auto;
-  border-radius: 12px;
-  margin-bottom: 8px;
+  flex-shrink: 0;
+  filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.35));
 }
 
 .hero-eyebrow {
@@ -707,11 +714,17 @@ footer .fine-print {
   }
 
   .hero {
-    padding: 60px 0;
+    padding: 40px 0;
+  }
+
+  .hero-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
   }
 
   .hero-logo {
-    height: 110px;
+    height: 200px;
   }
 
   .hero h1 {
