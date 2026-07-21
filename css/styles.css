@@ -333,15 +333,15 @@ section.alt {
   margin-bottom: 6px;
 }
 
-/* Service rows (home page) */
+/* Service rows (home page) - OPTION 2: editorial, accent border */
 .service-row {
   display: flex;
   align-items: center;
-  gap: 48px;
+  gap: 56px;
 }
 
 .service-row + .service-row {
-  margin-top: 64px;
+  margin-top: 72px;
 }
 
 .service-row.reverse {
@@ -349,26 +349,41 @@ section.alt {
 }
 
 .service-row img {
-  flex: 1 1 50%;
-  max-width: 50%;
-  border-radius: 12px;
-  aspect-ratio: 4 / 3;
+  flex: 1 1 46%;
+  max-width: 46%;
+  border-radius: 14px;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
+  box-shadow: 0 16px 32px rgba(28, 55, 102, 0.14);
 }
 
 .service-copy {
-  flex: 1 1 50%;
+  flex: 1 1 54%;
+  border-left: 3px solid var(--navy);
+  padding-left: 28px;
+}
+
+.service-row.reverse .service-copy {
+  border-left: none;
+  border-right: 3px solid var(--navy);
+  padding-left: 0;
+  padding-right: 28px;
+}
+
+.service-copy .icon {
+  margin-bottom: 16px;
 }
 
 .service-copy h3 {
   color: var(--navy-dark);
-  font-size: 1.4rem;
-  margin: 0 0 12px;
+  font-size: 1.6rem;
+  margin: 0 0 14px;
 }
 
 .service-copy p {
   color: var(--gray);
   margin: 0;
+  font-size: 1.02rem;
 }
 
 /* Photo strip / gallery */
