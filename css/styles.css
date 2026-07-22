@@ -386,6 +386,51 @@ section.alt {
   font-size: 1.02rem;
 }
 
+/* Service page section intros (image + heading) */
+.service-intro {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.service-intro.reverse {
+  flex-direction: row-reverse;
+}
+
+.service-intro img {
+  flex: 1 1 42%;
+  max-width: 42%;
+  border-radius: 14px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  box-shadow: 0 14px 30px rgba(28, 55, 102, 0.14);
+}
+
+.service-intro-copy {
+  flex: 1 1 58%;
+  text-align: left;
+}
+
+.service-intro-copy .eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: var(--navy-light);
+}
+
+.service-intro-copy h2 {
+  font-size: 2rem;
+  margin: 8px 0 12px;
+  color: var(--navy);
+}
+
+.service-intro-copy p {
+  color: var(--gray);
+  margin: 0;
+}
+
 /* Photo strip / gallery */
 .photo-grid {
   display: grid;
@@ -799,6 +844,22 @@ footer .fine-print {
 
   .service-row img {
     max-width: 100%;
+  }
+
+  .service-intro,
+  .service-intro.reverse {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+    margin-bottom: 28px;
+  }
+
+  .service-intro img {
+    max-width: 100%;
+  }
+
+  .service-intro-copy {
+    text-align: left;
   }
 
   .stats {
